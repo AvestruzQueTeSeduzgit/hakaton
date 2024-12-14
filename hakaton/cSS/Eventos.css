@@ -1,0 +1,120 @@
+/* Estilo geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0fdf4; /* Fundo verde-claro */
+    color: #064e3b; /* Verde-escuro */
+    line-height: 1.6;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #064e3b; /* Verde-escuro */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilo do menu de navegação */
+nav {
+    background-color: #10b981; /* Verde principal */
+    padding: 15px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Texto branco */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #064e3b; /* Verde-escuro no hover */
+}
+
+/* Seção principal dos eventos */
+.prin-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.secun-box {
+    background-color: #ffffff; /* Fundo branco */
+    border-radius: 10px;
+    border: 2px solid #10b981; /* Borda verde */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.secun-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.prim-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid #10b981; /* Borda verde */
+}
+
+.prim-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #064e3b; /* Verde-escuro */
+    margin: 10px 15px;
+}
+
+.Secun-text {
+    font-size: 1rem;
+    color: #064e3b; /* Verde-escuro */
+    margin: 0 15px 10px;
+}
+
+.data {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #059669; /* Tom de verde mais escuro */
+    margin: 0 15px 15px;
+    text-align: right;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .prin-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secun-box {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
