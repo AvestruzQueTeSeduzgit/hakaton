@@ -1,0 +1,141 @@
+/* Estilo geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0fdf4; /* Fundo verde-claro */
+    color: #064e3b; /* Texto em verde-escuro */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #10b981; /* Fundo verde */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #ffffff; /* Texto branco */
+    font-size: 2.5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Estilo principal */
+main {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff; /* Fundo branco */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border: 2px solid #10b981; /* Borda verde */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    color: #064e3b; /* Verde escuro */
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 2px solid #10b981; /* Borda verde */
+    background-color: #f0fdf4; /* Fundo verde-claro */
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #064e3b; /* Verde-escuro ao focar */
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+button[type="submit"] {
+    background-color: #10b981; /* Fundo verde */
+    color: #ffffff; /* Texto branco */
+    padding: 15px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #064e3b; /* Verde-escuro no hover */
+}
+
+button[type="submit"]:active {
+    background-color: #059669; /* Tom de verde mais escuro ao clicar */
+}
+
+/* Mensagens de sucesso e erro */
+.success-message,
+.error-message {
+    display: none;
+    text-align: center;
+    font-size: 1rem;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.success-message {
+    background-color: #10b981; /* Verde de sucesso */
+    color: #ffffff; /* Texto branco */
+}
+
+.error-message {
+    background-color: #dc2626; /* Vermelho de erro */
+    color: #ffffff; /* Texto branco */
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #10b981; /* Fundo verde */
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    color: #ffffff; /* Texto branco */
+    font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        width: 90%;
+        padding: 15px;
+    }
+
+    button[type="submit"] {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}

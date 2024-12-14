@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envie Sua Notícia</title>
+    <link rel="shotcut icon" href="c:\Users\lucas\Downloads\logo jornal.jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cSS\form.css">
+    <style>
+        #dudu{
+
+width: 140px;
+height: 70px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Envie Sua Notícia</h1>
+        <nav>
+         
+            
+        </nav>
+    </header>
+
+    <main>
+        <form id="form-noticia">
+            <label for="nome">Seu Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+            <label for="email">Seu E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+            <label for="mensagem">Sua Notícia ou Anúncio:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua notícia" required></textarea>
+
+            <button type="submit" onclick="votar('Enviar')">Enviar</button>
+        </form>
+
+        <div class="success-message">Sua notícia foi enviada com sucesso!</div>
+        <div class="error-message">Ocorreu um erro ao enviar sua notícia. Tente novamente.</div>
+    </main>
+
+    <footer>
+        <p>Jornal do Bairro do Futuro © 2024</p>
+    </footer>
+
+    <script src="scripts\form.js">
+    </script>
+    <script>
+        function votar(Enviar) {
+            alert(`Obrigado por nos notificar esta noticia! `);
+        }
+    </script>
+</body>
+</html>
